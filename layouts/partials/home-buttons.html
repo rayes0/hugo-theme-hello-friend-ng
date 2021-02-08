@@ -1,0 +1,6 @@
+<div id="home-links">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+    <div style="padding: 15px 0 15px 0;"><a  href="{{ .URL }}" title="{{ .Title }}">{{ .Pre }}<span>{{ .Name }}</span></a><br style="line-height: 40px;"/><a class="home-descriptions" href="{{ .URL }}">{{ .Post }}</a></div>
+    {{ end }}
+</div>

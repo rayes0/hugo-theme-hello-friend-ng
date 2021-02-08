@@ -1,0 +1,33 @@
+.gallery-link {
+	text-decoration: none;
+}
+.gallery-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding: 12px 0;
+}
+.gallery-heading {
+	font-size: 1.4em;
+	font-weight: 600;
+	font-variant: small-caps;
+}
+.gallery-date {
+	opacity: .6;
+}
+.gallery-img {
+	-webkit-filter: brightness(100%);
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+}
+
+.gallery-img:hover {
+	-webkit-filter: brightness(75%);
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+}
+

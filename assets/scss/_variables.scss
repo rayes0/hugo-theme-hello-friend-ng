@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* light theme color */
+$light-background: #fff;
+$light-background-secondary: #eaeaea;
+$light-color: #222;
+$light-color-secondary: #999;
+$light-border-color: #dcdcdc;
+
+/* dark theme colors */
+$dark-background: #2a2a2a;
+$dark-background-secondary: #3a3a3a;
+$dark-color: #bebebe;
+$dark-color-secondary: #aeaeae;
+$dark-border-color: #3a3a3a;
+
+$media-size-phone: "(max-width: 684px)";
+$media-size-tablet: "(max-width: 900px)";
+
+/* variables for js, must be the same as these in @custom-media queries */
+:root {
+  --phoneWidth: (max-width: 684px);
+  --tabletWidth: (max-width: 900px);
+}

@@ -1,0 +1,40 @@
+{{ define "main" }}
+<main aria-role="main" class="home-main">
+        <div>
+            {{ if .Site.Params.Portrait.Path }}
+            	<img src="{{ .Site.Params.Portrait.Path }}" class="circle" alt="{{ .Site.Params.Portrait.Alt }}" style="max-width:{{ .Site.Params.Portrait.MaxWidth }}" />
+            {{ end }}
+	    
+			<a href="{{ if .Site.Params.Logo.LogoHomeLink }}{{ .Site.Params.Logo.LogoHomeLink }}{{else}}{{ .Site.BaseURL }}{{ end }}" style="text-decoration: none;">
+				<div class="logo">
+					{{ if .Site.Params.Logo.path }}
+			    	    <img src="{{ .Site.Params.Logo.path }}" alt="{{ .Site.Params.Logo.alt }}" />
+					{{ end }}
+			        
+					{{- with .Site.Params.homeTitle }}
+						<span class="logo__text" id="logo-hometext">{{ . }}</span>
+						<span class="logo__cursor" id="home-logo-cursor"></span>
+					{{ end }}
+			    </div>
+			</a>
+
+            {{- with .Site.Params.homeSubtitle }}
+                <h4 style="display:block;font-family:monospace;font-weight:normal;font-variant:small-caps;" id="home-sub">{{.}}</h4>
+			{{- end }}
+
+	    	{{ partial "home-buttons.html" . }}
+
+        </div>
+    </main>
+{{ end }}
+
+{{ define "footer" }}
+       {{- with .Site.Params.social }}
+           <div>
+               {{ partial "social-icons.html" . }}
+           </div>
+       {{- end }}
+{{ end }}
+
+{{ define "header" }}{{ partial "footer.html" . }}{{ end }}
+
