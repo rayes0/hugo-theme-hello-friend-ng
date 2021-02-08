@@ -1,6 +1,6 @@
 # Sayo Hugo Theme
 
-My *personal* fork of the ![hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng) theme. Check ![here](https://rayes0.github.io/) for an example of a site created using this theme.
+My *personal* fork of the ![hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng) theme. Check ![here](https://rayes0.github.io) for an example of a site created using this theme.
 
 ## How to use
 
