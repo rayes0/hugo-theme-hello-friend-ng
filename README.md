@@ -7,7 +7,7 @@ My *personal* fork of the ![hello-friend-ng](https://github.com/rhazdon/hugo-the
 Clone into your Hugo folder:
 
 ```bash
-$ git clone https://github.com/rayes0/hugo-theme-sayo themes/hugo-theme-sayo
+$ git clone https://github.com/rayes0/hugo-theme-sayo themes/sayo
 ```
 
 There is a sample `config.toml` file provided in the `exampleSite` directory, which should be enough to get started with. Additionally, check ![here](https://github.com/rhazdon/hugo-theme-hello-friend-ng#more-things) for some more things you can do.
